@@ -14,7 +14,8 @@ public class Decorator extends Drink{
         return drink.calCost()+super.getCost();
     }
 
-    public void pringDes() {
-        System.out.println("本商品:"+super.getDes()+" "+super.getCost()+"&&原有商品:"+drink.getDes()+" "+drink.getCost());
+    @Override
+    public String getDes() {
+        return "本商品:"+super.getDes()+" "+super.getCost()+"&&原有商品:"+drink.getDes()+" "+drink.getCost();
     }
 }

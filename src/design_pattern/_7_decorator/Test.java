@@ -10,5 +10,10 @@ public class Test {
         order=new Milk(order);
         System.out.println(order.getDes());
         System.out.println(order.calCost());
+
+        order=new Chocolate(order);
+        System.out.println(order.getDes());
+        System.out.println(order.calCost());
+
     }
 }
